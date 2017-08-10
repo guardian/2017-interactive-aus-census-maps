@@ -1,18 +1,33 @@
-<div class="interactive-container">
-    <h2 class="interactive-es6-headline">Interactive bootstrap</h2>
+<div class="interactive-container offset">
+    <div class="row">
+    <div id="controls" class="main-col">
+            <div class="row">
+            <div class="selectorBox col50">
+                <div class="keyText">Currently showing</div>
+                <select id="statChooser"></select>
+            </div>
+            <div class="keyBox col50">
+                <div class="keyText">Key</div>
+                <div id=keyContainer></div>
+            </div>
+            </div>
+    </div>
+    </div>
+    <div id="mapContainer">
+            <div id="zoomIn" class="zoomButtons">+</div>
+            <div id="zoomOut" class="zoomButtons">–</div>
+            <div id="statusMessage" class="btn">Loading...</div>
+    </div>
 
-    <div class="test-msg">Loading…</div>
+    <div class="row notes">
+        <div class="main-col">
+            <h2>Notes</h2>
+            <div id="variableNote" class="row">
 
-    <ul class="fonts">
-        <li class="fonts__egyptian">Egyptian</li>
-        <li class="fonts__text-egyptian">Text Egyptian</li>
-        <li class="fonts__sans">Sans</li>
-        <li class="fonts__text-sans">Text Sans</li>
-    </ul>
-    <p>
-        <button class="interactive-share" data-network="facebook"></button>
-        <button class="interactive-share" data-network="twitter"></button>
-        <button class="interactive-share" data-network="email"></button>
-    </p>
-    <img src="%assetPath%/assets/imgs/test.png" />
+            </div>
+            <div class="row">
+                Census data is from the <a href='http://www.abs.gov.au/websitedbs/D3310114.nsf/Home/2016%20Census%20Community%20Profiles'>ABS time series community profiles</a>, excluding areas with less than 100 people. The regions shown are statistical area level 2, the smallest region of results available.
+            </div>
+        </div>
+    </div>
 </div>

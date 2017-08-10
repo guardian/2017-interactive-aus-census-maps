@@ -1,8 +1,15 @@
-body,
 figure.interactive {
     margin: 0;
     padding: 0;
-    background-color: #dcdcdc;
+    background-color: #FFFFFF;
+}
+
+figure {
+    display: block;
+    -webkit-margin-before: none;
+    -webkit-margin-after: none;
+    -webkit-margin-start: none;
+    -webkit-margin-end: none;
 }
 
 // Link styles don't exist on the app
@@ -25,15 +32,15 @@ a {
     background-color: white;
 
     padding: 10px;
-    @include mq(mobileLandscape) {
+/*    @include mq(mobileLandscape) {
         padding: 20px;
-    }
+    }*/
 
-    @each $bp in (tablet, desktop, leftCol, wide) {
+/*    @each $bp in (tablet, desktop, leftCol, wide) {
         @include mq($bp) {
             max-width: map-get($mq-breakpoints, $bp);
         }
-    }
+    }*/
 }
 
 .interactive-es6-headline {
